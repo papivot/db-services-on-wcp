@@ -23,9 +23,9 @@ allowAdminParty: false
 createAdminSecret: true
 
 adminUsername: admin
-adminPassword: Passw0rd!
+adminPassword: VMware1!
 # adminHash: -pbkdf2-this_is_not_necessarily_secure_either
-cookieAuthSecret: Passw0rd!
+cookieAuthSecret: VMware1!
 
 ## When enabled, will deploy a networkpolicy that allows CouchDB pods to
 ## communicate with each other for clustering and ingress on port 5984
@@ -55,7 +55,7 @@ persistentVolume:
   accessModes:
     - ReadWriteOnce
   size: 10Gi
-  storageClass: "nav-gold-policy"
+  storageClass: "my-gold-policy"
 
 ## The CouchDB image
 image:
