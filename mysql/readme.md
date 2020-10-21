@@ -1,6 +1,5 @@
 ```
-1664  helm install mysql stable/mysql -n demonamespace1 --set service.type=LoadBalancer,mysqlRootPassword=secretpassword,mysqlUser=my-user,mysqlPassword=my-password,mysqlDatabase=my-database,persistence.size=1Gi,persistence.storageClass=pacific-gold-storage-policy
- 1666  helm install mysql stable/mysql -n demonamespace1 --set service.type=LoadBalancer,mysqlRootPassword=secretpassword,mysqlUser=my-user,mysqlPassword=my-password,mysqlDatabase=my-database,persistence.size=1Gi,persistence.storageClass=pacific-gold-storage-policy
+
  1667  helm install mysql bitnami/mysql -n demonamespace1 --set service.type=LoadBalancer,mysqlRootPassword=secretpassword,mysqlUser=my-user,mysqlPassword=my-password,mysqlDatabase=my-database,persistence.size=1Gi,persistence.storageClass=pacific-gold-storage-policy
  1669  kubectl get pods mysql-master-0 -n demonamespace1
  1670  kubectl describe pods mysql-master-0 -n demonamespace1
