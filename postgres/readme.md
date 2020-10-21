@@ -1,3 +1,4 @@
+```
 helm install mypostgres bitnami/postgresql -n demonamespace1
  1581  kubectl get pods mypostgres-postgresql-0 -n demonamespace1
  1582  kubectl describe pods mypostgres-postgresql-0 -n demonamespace1
@@ -79,3 +80,5 @@ helm install mypostgres bitnami/postgresql -n demonamespace1
  1754  kubectl get svc mypostgres-postgresql-headless -n demonamespace1
  1755  kubectl get svc mypostgres-postgresql-headless -n demonamespace1 -o yaml
  1763  kubectl run mypostgres-postgresql-client --rm --tty -i --restart='Never' --namespace demonamespace1 --image docker.io/bitnami/postgresql:11.9.0-debian-10-r48 --env="PGPASSWORD=$POSTGRES_PASSWORD" --command -- psql --host postgres.demonamespace2.svc.cluster.local -U postgres -d postgres -p 5432
+
+```
